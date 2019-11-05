@@ -8,151 +8,59 @@ public class Main {
      Scanner key=new Scanner(System.in);
      String answer="";
         ArrayList<Bakery> booklist=new ArrayList<>();
-        Bakery bakery1=new Bakery();
-        bakery1.setName("BANANA BREAD");
-        bakery1.setExpirationDate("12/1/2019");
-        bakery1.setPrice(15);
-        bakery1.setRestrictions("gluten free");
-        bakery1.getIsInStock(true);
+        Bakery bakery1=new Bakery("BANANA BREAD","12/1/2019",15,"gluten free",true);
         booklist.add(bakery1);
 
-        Bakery bakery2=new Bakery();
-        bakery2.setName("white bread");
-        bakery2.setExpirationDate("12/12/2019");
-        bakery2.setPrice(14);
-        bakery2.setRestrictions("dairy free");
-        bakery2.getIsInStock(true);
+        Bakery bakery2=new Bakery("white bread","12/12/2019",14,"dairy free",true);
+
         booklist.add(bakery2);
 
-        Bakery bakery3=new Bakery();
-        bakery3.setName("HAMBURGER BUNS");
-        bakery3.setExpirationDate("12/5/2019");
-        bakery3.setPrice(12);
-        bakery3.setRestrictions("egg free");
-        bakery3.getIsInStock(true);
+        Bakery bakery3=new Bakery("HAMBURGER BUNS","12/5/2019",12,"egg free",true);
+
         booklist.add(bakery3);
 
-        Bakery bakery4=new Bakery();
-        bakery4.setName("CINNAMON BREAD");
-        bakery4.setExpirationDate("12/8/2019");
-        bakery4.setPrice(16);
-        bakery4.setRestrictions("soy free");
-        bakery4.getIsInStock(true);
+        Bakery bakery4=new Bakery("CINNAMON BREAD","12/8/2019",16,"soy free",true);
+
         booklist.add(bakery4);
 
-        Bakery bakery5=new Bakery();
-        bakery5.setName("Apple BREAD");
-        bakery5.setExpirationDate("12/8/2019");
-        bakery5.setPrice(15);
-        bakery5.setRestrictions("gluten free");
-        bakery5.getIsInStock(true);
+        Bakery bakery5=new Bakery("Apple BREAD","12/8/2019",15,"gluten free",true);
         booklist.add(bakery5);
 
 
-        Bakery bakery6=new Bakery();
-        bakery6.setName("pizza crust");
-        bakery6.setExpirationDate("12/8/2019");
-        bakery6.setPrice(15);
-        bakery6.setRestrictions("egg free");
-        bakery6.getIsInStock(true);
+        Bakery bakery6=new Bakery("pizza crust","12/8/2019",15,"egg free",true);
         booklist.add(bakery6);
 
-        Bakery bakery7=new Bakery();
-        bakery7.setName("savor BREAD");
-        bakery7.setExpirationDate("12/8/2019");
-        bakery7.setPrice(15);
-        bakery7.setRestrictions("dairy free");
-        bakery7.getIsInStock(true);
+        Bakery bakery7=new Bakery("savor BREAD","12/8/2019",15,"dairy free",true);
         booklist.add(bakery7);
 
-        Bakery bakery8=new Bakery();
-        bakery8.setName("muffins");
-        bakery8.setExpirationDate("12/12/2019");
-        bakery8.setPrice(12);
-        bakery8.setRestrictions("dairy free");
-        bakery8.getIsInStock(true);
+        Bakery bakery8=new Bakery("muffins", "12/12/2019",12,"dairy free",true);
         booklist.add(bakery8);
 
-        Bakery bakery9=new Bakery();
-        bakery9.setName("bread pudding");
-        bakery9.setExpirationDate("12/14/2019");
-        bakery9.setPrice(10);
-        bakery9.setRestrictions("peanut free");
-        bakery9.getIsInStock(true);
+        Bakery bakery9=new Bakery("bread pudding","12/14/2019", 10,"peanut free",true);
         booklist.add(bakery9);
 
-        Bakery bakery10=new Bakery();
-        bakery10.setName("fruit cake");
-        bakery10.setExpirationDate("12/5/2019");
-        bakery10.setPrice(13);
-        bakery10.setRestrictions("gluten free");
-        bakery10.getIsInStock(false);
+        Bakery bakery10=new Bakery("fruit cake","12/5/2019",13,"gluten free",false);
         booklist.add(bakery10);
 
-        Bakery bakery11=new Bakery();
-        bakery11.setName("Empanadas");
-        bakery11.setExpirationDate("12/4/2019");
-        bakery11.setPrice(10);
-        bakery11.setRestrictions("gluten free");
-        bakery11.getIsInStock(true);
+        Bakery bakery11=new Bakery("Empanadas","12/4/2019",10,"gluten free",true);
         booklist.add(bakery11);
 
-        Bakery bakery12=new Bakery();
-        bakery12.setName("Strawberry Cake");
-        bakery12.setExpirationDate("12/4/2019");
-        bakery12.setPrice(19);
-        bakery12.setRestrictions("gluten free");
-        bakery12.getIsInStock(true);
+        Bakery bakery12=new Bakery("Strawberry Cake", "12/4/2019",19,"gluten free",true);
         booklist.add(bakery12);
 
-        Bakery bakery13=new Bakery();
-        bakery13.setName("Golf Cart Cake");
-        bakery13.setExpirationDate("12/1/2019");
-        bakery13.setPrice(12);
-        bakery13.setRestrictions("gluten free");
-        bakery13.getIsInStock(true);
+        Bakery bakery13=new Bakery("Golf Cart Cake","12/1/2019",12,"gluten free",true);
         booklist.add(bakery13);
 
-        Bakery bakery14=new Bakery();
-        bakery14.setName("Baseball Cake");
-        bakery14.setExpirationDate("12/25/2019");
-        bakery14.setPrice(10);
-        bakery14.setRestrictions("dairy free");
-        bakery14.getIsInStock(true);
+        Bakery bakery14=new Bakery("Baseball Cake","12/25/2019",10,"dairy free",true);
         booklist.add(bakery14);
 
-        Bakery bakery15=new Bakery();
-        bakery15.setName("Dinosaur Volcano");
-        bakery15.setExpirationDate("12/26/2019");
-        bakery15.setPrice(23);
-        bakery15.setRestrictions("peanut free");
-        bakery15.getIsInStock(true);
+        Bakery bakery15=new Bakery("Dinosaur Volcano","12/26/2019",23,"peanut free", true);
         booklist.add(bakery15);
 
-        while(!answer.equalsIgnoreCase("q")) {
-            System.out.println("Welcome to the Brookley's Better Bakery App! ");
-            System.out.println("We contain peanut, gluten, soy and dairy in our products.  ");
-            System.out.println("To search for foods that you can eat, please enter the name of the diet restriction:  ");
-            System.out.println("To see a list of all our foods, please type \"all\" or type q to Quite ");
-            System.out.println();
-            answer = key.nextLine();
-            if (!answer.equalsIgnoreCase("all")) {
-                for (Bakery h : booklist) {
-                    if (answer.equalsIgnoreCase(h.getRestrictions())) {
-                        h.getDisplayText();
-                        System.out.println();
-                    }
-                }
-            } else {
-                for (Bakery h : booklist) {
 
-                    h.getDisplayText();
-                    System.out.println();
+        Process newObj=new Process();
+        newObj.Process(booklist,answer);
 
-                }
-
-            }
-        }
     }
 
 

@@ -16,7 +16,7 @@ public class Bakery {
 
     //overload constructor
 
-    public Bakery(String name, int price, String expirationDate, String restrictions, boolean isInStock) {
+    public Bakery(String name,  String expirationDate, int price,String restrictions, boolean isInStock) {
         this.name = name;
         this.restrictions = restrictions;
         this.expirationDate = expirationDate;
