@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
      Scanner key=new Scanner(System.in);
-
+     String answer="";
         ArrayList<Bakery> booklist=new ArrayList<>();
         Bakery bakery1=new Bakery();
         bakery1.setName("BANANA BREAD");
@@ -129,20 +129,30 @@ public class Main {
         bakery15.getIsInStock(true);
         booklist.add(bakery15);
 
-        System.out.println("Welcome to the Brookley's Better Bakery App! ");
-    System.out.println("We contain peanut, gluten, soy and dairy in our products.  ");
-    System.out.println("To search for foods that you can eat, please enter the name of the diet restriction:  ");
-    System.out.println("To see a list of all our foods, please type \"all\". ");
-    String answer=key.nextLine();
+        while(!answer.equalsIgnoreCase("q")) {
+            System.out.println("Welcome to the Brookley's Better Bakery App! ");
+            System.out.println("We contain peanut, gluten, soy and dairy in our products.  ");
+            System.out.println("To search for foods that you can eat, please enter the name of the diet restriction:  ");
+            System.out.println("To see a list of all our foods, please type \"all\" or type q to Quite ");
+            System.out.println();
+            answer = key.nextLine();
+            if (!answer.equalsIgnoreCase("all")) {
+                for (Bakery h : booklist) {
+                    if (answer.equalsIgnoreCase(h.getRestrictions())) {
+                        h.getDisplayText();
+                        System.out.println();
+                    }
+                }
+            } else {
+                for (Bakery h : booklist) {
 
-   for(Bakery h:booklist){
-       if(answer.equalsIgnoreCase(h.getRestrictions())){
-           h.getDisplayText();
-           System.out.println(answer);
-       }
-       System.out.println(" ");
-   }
+                    h.getDisplayText();
+                    System.out.println();
 
+                }
+
+            }
+        }
     }
 
 
