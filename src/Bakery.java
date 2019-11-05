@@ -4,7 +4,7 @@ import java.util.Date;
 public class Bakery {
     private String name;
     private int price;
-    private int expirationDate;
+    private String expirationDate;
     private String restrictions;
     private boolean isInStock;
 
@@ -16,7 +16,7 @@ public class Bakery {
 
     //overload constructor
 
-    public Bakery(String name, int price, int expirationDate, String restrictions, boolean isInStock) {
+    public Bakery(String name, int price, String expirationDate, String restrictions, boolean isInStock) {
         this.name = name;
         this.restrictions = restrictions;
         this.expirationDate = expirationDate;
@@ -39,11 +39,11 @@ public class Bakery {
         this.name = name;
     }
 
-    public int getExpirationDate() {
+    public String getExpirationDate() {
         return expirationDate;
     }
 
-    public void setExpirationDate(int expirationDate) {
+    public void setExpirationDate(String expirationDate) {
         this.expirationDate = expirationDate;
     }
 
