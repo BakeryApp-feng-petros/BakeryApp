@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 class Process {
     Scanner key=new Scanner(System.in);
-    Bakery bakery16=new Bakery();
 
     public Process() {
     }
@@ -18,9 +17,11 @@ class Process {
             var = key.nextLine();
             if (!var.equalsIgnoreCase("all")) {
                 for (Bakery h : list) {
-                    if (var.equalsIgnoreCase(h.getRestrictions())) {
-                        h.getDisplayText();
-                        System.out.println();
+                    for (String m : h.getRestrictions()) {
+                        if (var.equalsIgnoreCase(m)) {
+                            h.getDisplayText();
+                            System.out.println();
+                        }
                     }
                 }
             } else {

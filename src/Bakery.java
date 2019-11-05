@@ -5,7 +5,7 @@ public class Bakery {
     private String name;
     private int price;
     private String expirationDate;
-    private String restrictions;
+    private ArrayList <String> restrictions;
     private boolean isInStock;
 
     //default constructor
@@ -16,7 +16,7 @@ public class Bakery {
 
     //overload constructor
 
-    public Bakery(String name,  String expirationDate, int price,String restrictions, boolean isInStock) {
+    public Bakery(String name,  String expirationDate, int price,ArrayList <String> restrictions, boolean isInStock) {
         this.name = name;
         this.restrictions = restrictions;
         this.expirationDate = expirationDate;
@@ -47,11 +47,11 @@ public class Bakery {
         this.expirationDate = expirationDate;
     }
 
-    public String getRestrictions() {
+    public ArrayList<String> getRestrictions() {
         return restrictions;
     }
 
-    public void setRestrictions(String restrictions) {
+    public void setRestrictions(ArrayList<String> list) {
         this.restrictions = restrictions;
     }
 
